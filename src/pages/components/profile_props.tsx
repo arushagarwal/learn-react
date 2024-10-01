@@ -12,7 +12,7 @@ function Avatar({person, size=100}: AvatarProps) {
   );
 }
 
-export default function Profile() {
+export default function Profile_Props() {
   return (
     <div>
         <Avatar
