@@ -16,6 +16,10 @@ import Form from './components/updObjects'
 import UserForm from './qcomps/stuckForm'
 import FeedbackForm from './qcomps/thankYouCrash'
 import Counter from './components/snapshot'
+import RequestTracker from './qcomps/shoppingCart'
+import Scoreboard from './qcomps/updObjectsForm'
+import List from './qcomps/artistsRemoveArr'
+import BucketList from './qcomps/arrObj'
 
 export default function Home() {
   return (
@@ -38,6 +42,14 @@ export default function Home() {
     <FeedbackForm />
     <br />
     <Counter />
+    <br />
+    <RequestTracker />
+    <br />
+    <Scoreboard />
+    <br />
+    <List />
+    <br />
+    <BucketList />
     </div>
 
   )

@@ -8,18 +8,18 @@ export default function Scoreboard() {
   });
 
   function handlePlusClick() {
-    player.likescore++;
+    const nextPlayer = {...player, likescore: player.likescore+1};
+    setPlayer(nextPlayer);
   }
 
   function handleFirstNameChange(e: { target: { value: string; }; }) {
-    setPlayer({
-      ...player,
-      firstName: e.target.value,
-    });
+    const nextPlayer = {...player, firstName: e.target.value};
+    setPlayer(nextPlayer);
   }
 
   function handleLastNameChange(e: { target: { value: string; }; }) {
-    player.lastName = e.target.value;
+    const nextPlayer = {...player, lastName: e.target.value};
+    setPlayer(nextPlayer);
   }
 
   return (
